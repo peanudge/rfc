@@ -1,5 +1,5 @@
 ---
-name: RFC Template
+name: Task RFC Template
 about: This is my RFC task template
 title: ''
 labels: RFC
