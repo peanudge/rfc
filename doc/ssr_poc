@@ -1,0 +1,32 @@
+# Server Side Rendering 기반의 서비스 POC
+
+
+서버사이드 렌더링에 대한 경험, 지식이 부족할 때 서비스를 구현하기전에 기술의 실현 가능성을 위해 Proof of concept을 시도해봐야한다.
+
+
+## 목표
+
+- Next.js 라우트 구조 확인
+   - File-system routing
+   - dynamic routing
+   - shallow routing
+   - routing & lifecycle => 다소 복잡도가 있어보임.
+- 페이지별 Meta Tagging
+   - SEO를 이용해 서비스를 고객에게 널리알리기 위해 필수로 알아봐야하는 부분
+   - `next/head` 를 통해 쉽게 적용할 수 있음(공통 head, 개별 페이지 head 적용 방식을 익혀야함.)
+- API Fetching
+   - `getServerSideProps`: 페이지 조회마다 호출됨.
+   - `getStaticProps`: build 타임에 한번 호출되어 static 페이지 만듬.
+   - Client Side (기존 CSR 방식과 동일) 
+   - API gateway 
+- NextJS 기능 체크목록
+   - font optimization
+   - image optimization
+       - `next/image` 는 lazy loding등 성능상에 최적화를 해준다.
+       
+# POC 대신 지름길(Boilerplate)
+
+가끔은 코드를 바로보고 진행해도 가끔 도움이 될 수 있습니다. 특히, boilerplate 를 찾아보는 것도 좋은 방법이지만 종종 신뢰할 수 없는 boilerplate가 있을 수 있으니 주의해서 활용해야합니다.
+
+
+
